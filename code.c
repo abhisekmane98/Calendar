@@ -3,8 +3,10 @@ int main()
 {
 	int y,m,d,y1,y2,p;
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31},i,sum=0;
+	
 	printf("Enter the year,month and date");
 	scanf("%d %d %d",&y,&m,&d);
+	
 	y1=y-1;
 	y2=y1/4-y1/100+y1/400; // leap years
 	p=365*y1+y2;
